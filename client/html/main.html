@@ -4,4 +4,19 @@
 
 <template name='home'>
 	<h1>Helpar</h1>
+
+	<div id="video-container">
+		Their video : <video id='theirVideo' class='theirVideo' autoplay></video>
+		<video id="myVideo" muted='true' class='myVideo' autoplay></video>
+	</div>
+
+	<h2>Controls</h2>
+	<div>
+		<p>Your id: <span id="myPeerId">...</span></p>
+		<p>Make a call</p><br>
+		<input type="text" placeholder="call user id" id="remotePeerId">
+
+		<p><a href="#" id="makeCall">Call</a></p>
+		<p><a href="#" id="endCall">End Call</a></p>
+	</div>
 </template>
